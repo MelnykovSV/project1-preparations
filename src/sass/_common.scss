@@ -1,1 +1,23 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.list-item {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.list-item-element1 {
+  width: 50%;
+}
+
+.list-item-element2 {
+  width: 50%;
+}
+
+.list-item-element2 h2 {
+  width: fit-content;
+  margin: 0 auto;
+}
+.list-item-element2 h3 {
+  width: fit-content;
+  margin-left: auto;
+}
