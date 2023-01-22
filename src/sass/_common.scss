@@ -1,65 +1,7 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
-// $black: #000000;
-.list-item {
-  display: flex;
-  flex-direction: row-reverse;
-  width: fit-content;
-}
-
-.list-item-element1 {
-  width: 50%;
-}
-
-.list-item-element2 {
-  width: 50%;
-  transform: translateX(50%);
-}
-
-.list-item-element2 h2 {
-  width: fit-content;
-  margin: 0 auto;
-}
-.list-item-element2 h3 {
-  width: fit-content;
-  margin-left: auto;
-}
-
-.slider {
-  position: relative;
-  width: 548px;
-}
-.slider-item {
-  margin-left: 20px;
-  margin-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-img {
-  display: block;
-  margin: 0 auto;
-}
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.my-slick-prev {
-  left: 0;
-  z-index: 5;
-}
-.my-slick-next {
-  right: 0;
-}
-
 body {
-  // background-color: rgba(#000000, 0.5);
-  // background-color: var(--black);
-
-  // background-color: $black;
-  background-color: rgba(var(--black-rgb), 0.5);
-}
-
-.responsive1 {
-  transform: translateY(-50%);
+  font-family: 'Montserrat', sans-serif;
+  //   font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--primary-dark);
+  background-color: var(--bg);
 }
