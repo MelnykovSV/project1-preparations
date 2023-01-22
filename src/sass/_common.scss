@@ -1,5 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-
+// $black: #000000;
 .list-item {
   display: flex;
   flex-direction: row-reverse;
@@ -53,7 +53,11 @@ img {
 }
 
 body {
-  background-color: aqua;
+  // background-color: rgba(#000000, 0.5);
+  // background-color: var(--black);
+
+  // background-color: $black;
+  background-color: rgba(var(--black-rgb), 0.5);
 }
 
 .responsive1 {
