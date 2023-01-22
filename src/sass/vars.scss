@@ -7,14 +7,20 @@
   --secondary: #f3c653;
   --secondary-dark: #c79002;
 
-  --text-main: #7a7a7a;
+  // ======================TEXT======================
+  --text-primary: #7a7a7a;
+  --text-secondary: #494848;
+  --text-secondary-light: #b4b4b4;
+  --text-address: #e5e5e5;
 
   // ======================RGBA======================
-  --main-dark-rgb: 0, 0, 0;
+  --primary-dark-rgb: 0, 0, 0;
+  --secondary-rgb: 243, 198, 83;
   // ======================BACKGROUND======================
   //   fon lemon
   --bg: #fffdee;
   //   fon lemon dark
   --bg-dark: #f0ecd6;
   --bg-footer: #0e0c07;
+  --bg-image: #dadada;
 }
