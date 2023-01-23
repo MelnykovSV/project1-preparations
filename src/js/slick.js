@@ -54,7 +54,9 @@ $('.slick-description').slick({
   speed: 300,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  slidesToShow: 2,
+  slidesToShow: 3,
+  centerMode: true,
+  variableWidth: true,
 
   //   responsive: none,
 });
