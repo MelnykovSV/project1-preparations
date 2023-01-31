@@ -1,3 +1,5 @@
+@import '~nice-select2/src/scss/nice-select2.scss';
+
 body {
   font-family: 'Montserrat', sans-serif;
   //   font-size: 16px;
@@ -7,17 +9,19 @@ body {
 }
 
 .container {
-  max-width: 414px;
+  max-width: $mobile;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  @media screen and (min-width: 1024px) {
-    max-width: 1024px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
     padding-left: 47px;
     padding-right: 47px;
   }
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
     padding-left: 85px;
     padding-right: 85px;
   }
@@ -38,4 +42,46 @@ body {
 
 .modal-open {
   overflow: hidden;
+}
+
+.complex__text {
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--text-secondary-light);
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.complex__logo {
+  display: block;
+  font-family: 'FilmP3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--text-mimino-dark);
+
+  &--light {
+    color: var(--primary-light);
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 64px;
+  }
+
+  & > span {
+    letter-spacing: normal;
+  }
 }

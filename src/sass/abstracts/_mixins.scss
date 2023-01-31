@@ -1,0 +1,46 @@
+@mixin button-dark() {
+  background-color: var(--primary-dark);
+  display: inline-block;
+  border: 2px solid var(--bg-dark);
+  border-radius: 25px;
+  min-width: 236px;
+  max-width: 258px;
+  padding: 14px 24px;
+  color: var(--secondary);
+  text-align: center;
+  cursor: pointer;
+
+  transition: background-color var(--time) var(--cubic),
+    border-color var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-light);
+    border-color: var(--secondary);
+  }
+}
+
+@mixin button-transparent() {
+  background: rgba(var(--primary-dark-rgb), 0.4);
+  display: inline-block;
+  border: 2px solid var(--primary-light);
+  border-radius: 25px;
+  min-width: 232px;
+  max-width: 300px;
+  padding: 12px 35px;
+  color: var(--secondary);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color var(--time) var(--cubic);
+  @media screen and (max-width: 1280px) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--primary-light);
+    border: 2px solid var(--secondary);
+    border-radius: 25px;
+  }
+}
